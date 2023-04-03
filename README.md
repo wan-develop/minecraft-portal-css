@@ -17,9 +17,11 @@ The project consists of two files:
 
 Here are some screenshots of the portal in action:
 
-![Minecraft Portal Closed](/images/portal-closed.png)
+![Minecraft Portal Closed](/images/minecraft-portal-image1.png)
 
-![Minecraft Portal Open](/images/portal-open.png)
+## Click and hold the page, Release the click to exit the nether.
+
+![Minecraft Portal Open](/images/minecraft-portal-image2.png)
 
 ## Acknowledgments
 
