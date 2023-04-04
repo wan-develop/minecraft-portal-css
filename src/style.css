@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    --portal-color: rgb(92, 35, 92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    width: 100vw;
+    height: 100vh;
+    
+    margin: 0;
+    padding:0;  
+}
+
+body:active #portal {
+    transform: scale(3);
+    
+    box-shadow: 0 0 200px red,
+                0 0 1px 89px #123;
+}
+
+body #portal:active #nether{
+    
+    opacity: 1;
+}
+
+body:active #ground {
+    height: 300px;
+}
+
+#nether {
+    
+    background-image: url('https://my.mcpedl.com/storage/addons/1510/images/370ccd57e05587b8bd2720baf86b802c.png');
+    
+    background-repeat: no-repeat;
+    background-position:center;
+    
+    transition: opacity ease 1s;
+    
+    opacity: 0;
+    
+    width: 100%;
+    height: 100%;
+    
+}
+
+#portal {
+    
+
+    width: 170px;
+    height: 250px;
+    
+    box-shadow: 0 0 109px var(--portal-color),
+                0 0 1px 70px #112233;
+                
+    background-color: var(--portal-color);
+    
+    transition: 2s;
+
+    animation: portal-blink 1s linear infinite alternate;
+
+    border-radius: 1px;
+  
+} 
+
+
+
+#sky {
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #5E9D34;
+
+    width: 100%;
+    height: 100%;
+}
+
+#ground {
+    z-index: -1;
+    position: absolute;
+    background-color: #81A0FF;
+    width: 100%;
+    height: 400px;
+    transition: 2s;
+}
+
+
+@keyframes portal-blink {
+
+    from{
+        background-color: var(--portal-color);
+    }
+
+    to{
+        background-color: purple;
+    }
+
+}
